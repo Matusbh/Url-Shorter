@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Free URL Shortener | Create Short Links Instantly</title>
+    <meta
+      name="description"
+      content="Free and simple URL shortener to create clean, shareable links instantly. Fast, reliable, and easy to use on any device."
+    />
+    <meta
+      name="keywords"
+      content="url shortener, short links, free link shortener, shorten url, online url shortener, link generator, link manager"
+    />
+    <meta name="author" content="MatDevs" />
+
+    <link rel="icon" href="/frontend/public/img/MatDevs.png" />
+
+    <link rel="canonical" href="https://tusitio.com/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="https://github.com/Matusbh" aria-label="MatDevs GitHub">
+          <img
+            src="./public/img/MatDevs.png"
+            width="150"
+            height="75"
+            alt="MatDevs logo"
+            class="logo-matdevs"
+            decoding="async"
+            fetchpriority="high"
+          />
+        </a>
+      </figure>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Url Shorter</a></li>
+          <li><a href="./info.html">Information</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="hero-tittle">
+          <h1 class="tittle">URL Shorter</h1>
+          <p>
+            Free and simple URL shortener to create clean, shareable links
+            instantly.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-body">
+          <form id="shorten-form">
+            <h2>Paste the URL to be shortened.</h2>
+
+            <div class="hero-form">
+              <input
+                type="url"
+                id="url-input"
+                name="url"
+                placeholder="https://example.com"
+                required
+              />
+              <button id="boton" type="submit">Create Short Link</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-result">
+          <h3>Shortened URL.</h3>
+          <div class="hero-result-form">
+            <input
+              type="url"
+              id="url-result"
+              name="url"
+              placeholder="https://example.com"
+            />
+            <button id="copy-button" type="button">Copy link</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-error" id="hero-error">
+          <h3>Something went wrong</h3>
+          <p id="error-message">Try it again.</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <footer class="footer"></footer>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

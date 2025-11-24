@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+
+.hero-contacto {
+  text-align: center;
+  h1 {
+    @include m.tittle();
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  p {
+    @include m.sub-tittle();
+    margin: auto;
+    width: 700px;
+    margin-bottom: 25px;
+  }
+}
+.rrss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var.$bright-blue;
+  }
+
+  .gmail-logo,
+  .x-logo {
+    width: 30px;
+    height: auto;
+  }
+}

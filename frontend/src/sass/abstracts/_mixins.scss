@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as var;
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+//reset uls
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin tittle() {
+  font-family: var.$tittle-font;
+  font-size: 70px;
+  font-weight: bolder;
+  line-height: 51px;
+  color: var.$dark-blue;
+}
+
+@mixin sub-tittle() {
+  font-family: var.$sub-tittle-font;
+  font-size: 30px;
+  line-height: 26px;
+  color: var.$middle-blue;
+}
+
+@mixin body() {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 26px;
+  color: var.$bright-blue;
+}
+
+@mixin button() {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+@mixin hero-back() {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 700px;
+  height: 200px;
+}

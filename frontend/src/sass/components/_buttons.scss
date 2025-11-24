@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+
+#boton {
+  font-size: 18px;
+  text-decoration: none;
+  width: 180px;
+  height: 70px;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+#copy-button {
+  font-size: 18px;
+  text-decoration: none;
+  width: 180px;
+  height: 70px;
+  border: 0;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
